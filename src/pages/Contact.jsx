@@ -5,6 +5,11 @@ function Contact() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
+  function handleSubmit(e) {
+    e.preventDefault();
+    alert(`Thanks for reaching out, ${name}, we'll get back to you soon!`);
+  }
+
   return (
     <div className="px-6 py-8 mx-auto flex flex-col gap-1 items-center">
       <h1 className="text-3xl text-gray-800 mb-2">Contact Us</h1>
@@ -53,11 +58,6 @@ function Contact() {
       </form>
     </div>
   );
-
-  function handleSubmit(e) {
-    e.preventDefault();
-    alert(`Thanks for reaching out, ${name}, we'll get back to you soon!`);
-  }
 }
 
 export default Contact;

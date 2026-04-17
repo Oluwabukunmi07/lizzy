@@ -17,7 +17,7 @@ function About() {
         </div>
 
         {/* Right: Text content */}
-        <div className="">
+        <div className="w-full md:w-1/2">
           <h2 className="text-3xl mb-4">Iyabo Olowofela</h2>
           <p className="text-gray-600 leading-relaxed mb-4">
             Based in Akure, Ondo State, Nigeria, Iyabo Olowfela is the creative
