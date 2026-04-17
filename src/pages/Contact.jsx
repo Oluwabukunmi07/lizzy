@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Phone, MapPin } from "lucide-react";
+import { Phone, MapPin, Mail } from "lucide-react";
 
 function Contact() {
   const [name, setName] = useState("");
@@ -14,7 +14,7 @@ function Contact() {
   return (
     <div className="px-6 py-8 mx-auto flex flex-col gap-1 items-center">
       <h1 className="text-3xl text-gray-800 mb-2 mt-10">Contact Us</h1>
-      <div>
+      <div className="flex flex-col items-center mb-10">
         <a
           href="https://wa.me/2348033986620"
           target="_blank"
@@ -26,6 +26,22 @@ function Contact() {
             className="text-gray-700 hover:text-black transition duration-300 hover:border-1 border-gray-400 rounded-full w-6 h-6 p-1"
           />
           +234 803 398 6620
+        </a>
+
+        <p className="text-gray-400 inline-flex items-center gap-1">
+          <MapPin size={20} className="text-gray-700" />
+          Akure, Ondo State, Nigeria
+        </p>
+
+        <a
+          href="mailto:"
+          className="text-gray-400 mt-2 inline-flex items-center gap-1"
+        >
+          <Mail
+            size={20}
+            className="text-gray-700 hover:text-black transition duration-300 hover:border-1 border-gray-400 rounded-full w-6 h-6 p-1"
+          />
+          felayetunde@gmail.com
         </a>
       </div>
       <form
