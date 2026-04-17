@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Whatsapp, Instagram, Location, Mail, Facebook } from "Lucide-react";
 
 function Contact() {
   const [name, setName] = useState("");
@@ -13,12 +14,14 @@ function Contact() {
   return (
     <div className="px-6 py-8 mx-auto flex flex-col gap-1 items-center">
       <h1 className="text-3xl text-gray-800 mb-2">Contact Us</h1>
-      <p className="text-gray-400 leading-relaxed">Phone: +2348033986620</p>
       <p className="text-gray-400 leading-relaxed">
-        Email: felayetunde@gmail.com
+        <Whatsapp className="inline mr-2" /> +2348033986620
+      </p>
+      <p className="text-gray-400 leading-relaxed">
+        <Mail className="inline mr-2" /> felayetunde@gmail.com
       </p>
       <p className="text-gray-400 leading-relaxed mb-6">
-        Location: Akure, Ondo State, Nigeria
+        <Location className="inline mr-2" /> Akure, Ondo State, Nigeria
       </p>
 
       <form
