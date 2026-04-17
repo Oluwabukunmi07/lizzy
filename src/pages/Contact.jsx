@@ -14,16 +14,32 @@ function Contact() {
   return (
     <div className="px-6 py-8 mx-auto flex flex-col gap-1 items-center">
       <h1 className="text-3xl text-gray-800 mb-2">Contact Us</h1>
-      <p className="text-gray-400 leading-relaxed">
-        <Phone className="inline mr-2" /> +2348033986620
-      </p>
-      <p className="text-gray-400 leading-relaxed">
-        <Mail className="inline mr-2" /> felayetunde@gmail.com
-      </p>
-      <p className="text-gray-400 leading-relaxed mb-6">
-        <MapPin className="inline mr-2" /> Akure, Ondo State, Nigeria
-      </p>
-
+      <div>
+        <a
+          href="#"
+          target="_blank"
+          rel="noreferrer"
+          className="text-gray-400 hover:text-black transition"
+        >
+          <Instagram size={20} />
+        </a>
+        <a
+          href="#"
+          target="_blank"
+          rel="noreferrer"
+          className="text-gray-400 hover:text-black transition"
+        >
+          <Facebook size={20} />
+        </a>
+        <a
+          href="https://wa.me/2348033986620"
+          target="_blank"
+          rel="noreferrer"
+          className="text-gray-400 hover:text-black transition"
+        >
+          <Phone size={20} />
+        </a>
+      </div>
       <form
         className="border-2 bg-gray-100 p-6 rounded-lg w-full max-w-md flex flex-col gap-4"
         onSubmit={handleSubmit}
