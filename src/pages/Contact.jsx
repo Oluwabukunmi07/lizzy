@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Phone, Instagram, MapPin, Mail, Facebook } from "lucide-react";
+import { Phone, MapPin } from "lucide-react";
 
 function Contact() {
   const [name, setName] = useState("");
@@ -13,31 +13,19 @@ function Contact() {
 
   return (
     <div className="px-6 py-8 mx-auto flex flex-col gap-1 items-center">
-      <h1 className="text-3xl text-gray-800 mb-2">Contact Us</h1>
+      <h1 className="text-3xl text-gray-800 mb-2 mt-10">Contact Us</h1>
       <div>
-        <a
-          href="#"
-          target="_blank"
-          rel="noreferrer"
-          className="text-gray-400 hover:text-black transition"
-        >
-          <Instagram size={20} />
-        </a>
-        <a
-          href="#"
-          target="_blank"
-          rel="noreferrer"
-          className="text-gray-400 hover:text-black transition"
-        >
-          <Facebook size={20} />
-        </a>
         <a
           href="https://wa.me/2348033986620"
           target="_blank"
           rel="noreferrer"
-          className="text-gray-400 hover:text-black transition"
+          className="text-gray-400 mb-2 inline-flex items-center gap-1"
         >
-          <Phone size={20} />
+          <Phone
+            size={20}
+            className="text-gray-700 hover:text-black transition duration-300 hover:border-1 border-gray-400 rounded-full w-6 h-6 p-1"
+          />
+          +234 803 398 6620
         </a>
       </div>
       <form
