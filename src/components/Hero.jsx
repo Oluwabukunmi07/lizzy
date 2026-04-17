@@ -5,7 +5,7 @@ function Hero() {
   return (
     <section className="bg-stone-100 px-6 py-20 md:px-12">
       <div className="mx-auto max-w-5xl text-center">
-        <p className="mb-4 text-sm font-medium uppercase tracking-[0.3em] text-gray-600">
+        <p className="mb-4 mt-1 text-sm font-medium uppercase tracking-[0.3em] text-gray-600">
           Lizzy Fashion
         </p>
         <h1 className="text-5xl leading-tight text-gray-900 md:text-7xl">
