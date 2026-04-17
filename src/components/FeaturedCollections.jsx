@@ -30,7 +30,7 @@ function FeaturedCollections() {
 
       <div className="text-center mt-8">
         <Link
-          to="/Collections"
+          to="/collections"
           className="border border-black px-6 py-2 text-sm uppercase tracking-widest hover:bg-black hover:text-white transition duration-400"
         >
           See All
